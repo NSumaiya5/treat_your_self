@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Navbar = ({toggle}) => {
     return (
         
-            <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono" role='navigation'>
-                <Link to='/' className="pl-8">Eat & Fun</Link>
+            <nav className="flex justify-between items-center h-16 bg-black text-white relative shadow-sm font-mono" role='navigation'>
+                <Link to='/' className="pl-8"><b>Treat your <br/>self</b></Link>
                 <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
@@ -14,7 +14,7 @@ const Navbar = ({toggle}) => {
                 </div>
 
                 <div className="pr-8 md:block hidden">
-                    <Link className='p-4' to='/'>Home</Link>
+                    <Link className='p-5 ' to='/'>Home</Link>
                     <Link className='p-4' to='/menu'>Menu</Link>
                     <Link className='p-4' to='/about'>About</Link>
                     <Link className='p-4' to='/contact'>Contact</Link>
@@ -25,3 +25,4 @@ const Navbar = ({toggle}) => {
 };
 
 export default Navbar;
+

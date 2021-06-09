@@ -1,11 +1,12 @@
 import React from 'react';
 import Content from '../Components/Content';
-import Hero from '../Components/Hero';
+import Order from '../Components/Order';
 
 const Home = () => {
     return (
         <>
-        <Hero></Hero>
+        <Order></Order>
+      
         <Content></Content>
         
         </>
